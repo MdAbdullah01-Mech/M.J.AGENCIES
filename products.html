@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the M . J . AGENCIES product catalog for cement, steel, structural materials, waterproofing, finishers, and hardware.">
+  <title>Product Catalog | M . J . AGENCIES</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="supabase-client.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="brand" href="index.html" aria-label="M . J . AGENCIES home">
+      <img class="brand-logo" src="assets/mj-agency-logo.png" alt="M.J. Agency logo">
+      <span>M . J . AGENCIES</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero catalog-hero">
+      <p class="eyebrow">Product Catalog</p>
+      <h1>Construction materials from foundation to finish.</h1>
+      <p>Browse core categories supplied by M . J . AGENCIES, grouped for contractors, builders, engineers, and procurement teams.</p>
+    </section>
+
+    <section class="catalog-section">
+      <div class="catalog-tools" aria-label="Catalog filters">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="cement">Cement</button>
+        <button class="filter-button" type="button" data-filter="steel">Steel</button>
+        <button class="filter-button" type="button" data-filter="structural">Structural</button>
+        <button class="filter-button" type="button" data-filter="waterproofing">Waterproofing & Finishers</button>
+        <button class="filter-button" type="button" data-filter="hardware">Hardware</button>
+      </div>
+
+      <div class="catalog-category" data-category="cement">
+        <h2>Cement</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/ramco-infra-super-opc-53.png" alt="Ramco Infra Super OPC 53 Grade cement">
+            <div>
+              <h3>Ramco Infra Super OPC 53 Grade</h3>
+              <p>High-performance Portland cement developed for special concrete requirements and superior strength.</p>
+              <span>OPC 53 grade</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/ramco-samudra.png" alt="Ramco Samudra cement">
+            <div>
+              <h3>Ramco Samudra</h3>
+              <p>Portland Slag Cement manufactured as per IS 455:2015, suitable for durable construction needs.</p>
+              <span>PSC cement</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/ramco-supercrete.jpg" alt="Ramco Supercrete cement">
+            <div>
+              <h3>Ramco Supercrete Cement</h3>
+              <p>Portland Pozzolana Cement designed for high strength, durability, and reduced concrete surface cracks.</p>
+              <span>PPC cement</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/ramco-superfine-efc.png" alt="Ramco Superfine EFC cement">
+            <div>
+              <h3>Ramco Superfine EFC</h3>
+              <p>Eco-friendly blended cement with resistance against sulphate and chloride attack.</p>
+              <span>Marine & hydraulic work</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/ramco-super-fast.jpg" alt="Ramco Super Fast cement">
+            <div>
+              <h3>Ramco Super Fast</h3>
+              <p>Portland Pozzolana Cement ideal for precast blocks, paving blocks, solid blocks, and fly ash bricks.</p>
+              <span>Precast blocks</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/ramco-supergrade-official.png" alt="Ramco Supergrade cement">
+            <div>
+              <h3>Ramco Supergrade</h3>
+              <p>High-quality blended cement engineered for superior strength, consistency, and enhanced durability.</p>
+              <span>Premium blended cement</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="catalog-category" data-category="steel">
+        <h2>Steel</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/pulkit-tmt-bars.png" alt="Pulkit TMT Bars logo">
+            <div>
+              <h3>Pulkit TMT Bars</h3>
+              <p>Ribbed reinforcement bars for RCC beams, columns, slabs, and foundations.</p>
+              <span>8 mm to 32 mm</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/kiscal-tmt-bars.jpg" alt="Kiscal TMT Bars">
+            <div>
+              <h3>Kiscal TMT Bars</h3>
+              <p>High-bond steel reinforcement designed for durability and consistent site handling.</p>
+              <span>Fe 500 / Fe 550 options</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/binding-wire.png" alt="Binding wire coil">
+            <div>
+              <h3>Binding Wire</h3>
+              <p>Flexible wire for reinforcement tying, stirrup placement, and site fabrication.</p>
+              <span>Coil supply</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="catalog-category" data-category="structural">
+        <h2>Structural</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/reinforcement-supports.png" alt="Cover blocks and reinforcement supports">
+            <div>
+              <h3>Reinforcement Supports</h3>
+              <p>Cover blocks, chairs, spacer supports, mesh, and reinforcement accessories for RCC work.</p>
+              <span>As required</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/site-structural-steel.png" alt="Site structural steel and column reinforcement">
+            <div>
+              <h3>Site Structural Steel</h3>
+              <p>Steel support materials for fabrication, slab preparation, beams, columns, and site handling.</p>
+              <span>Project supply</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/concrete-site-essentials.png" alt="Column shuttering process and concrete site essentials">
+            <div>
+              <h3>Concrete Site Essentials</h3>
+              <p>Materials used around shuttering, reinforcement placement, curing, and concrete preparation.</p>
+              <span>Site support</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="catalog-category" data-category="waterproofing">
+        <h2>Waterproofing & Finishers</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/wall-putty-finishers.png" alt="Wall putty range of products">
+            <div>
+              <h3>Wall Putty & Surface Finishers</h3>
+              <p>Finishing materials for smooth wall preparation before primer and paint application.</p>
+              <span>Interior / exterior</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/waterproofing-compounds.png" alt="Waterproofing compounds and crack sealing">
+            <div>
+              <h3>Waterproofing Compounds</h3>
+              <p>Liquid waterproofing, crack fillers, sealants, and roof protection systems.</p>
+              <span>Terrace / bathroom / wall</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/tile-adhesives-grouts.png" alt="Tile adhesive application for floor tiles">
+            <div>
+              <h3>Tile Adhesives & Grouts</h3>
+              <p>Tile fixing, joint filling, repair, and finishing products for floors and walls.</p>
+              <span>Finish work</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="catalog-category" data-category="hardware">
+        <h2>Hardware</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/fasteners-fixings.png" alt="Nuts, bolts, screws, and fasteners">
+            <div>
+              <h3>Fasteners & Fixings</h3>
+              <p>Nuts, bolts, screws, anchors, clamps, and common construction fastening items.</p>
+              <span>Retail and bulk</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/site-tools.png" alt="Construction site tools including trowel, hammer, level, tape, shovel, and wheelbarrow">
+            <div>
+              <h3>Site Tools</h3>
+              <p>Hand tools, measuring tools, blades, brushes, and day-to-day site consumables.</p>
+              <span>Daily essentials</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/plumbing-adhesives.png" alt="Plumbing fittings, connectors, and pipe accessories">
+            <div>
+              <h3>Plumbing & Adhesives</h3>
+              <p>Pipes, fittings, tapes, adhesives, sealants, and support materials for installation work.</p>
+              <span>Site support</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>M . J . AGENCIES</strong>
+      <p>Premium construction materials supplier in Trichy.</p>
+    </div>
+    <a href="contact.html">Contact Us</a>
+  </footer>
+
+</body>
+</html>

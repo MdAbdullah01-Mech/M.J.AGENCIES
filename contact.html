@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact M . J . AGENCIES in Trichy for cement, TMT steel, structural materials, waterproofing, finishers, and construction hardware enquiries.">
+  <title>Contact | M . J . AGENCIES</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="supabase-client.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="brand" href="index.html" aria-label="M . J . AGENCIES home">
+      <img class="brand-logo" src="assets/mj-agency-logo.png" alt="M.J. Agency logo">
+      <span>M . J . AGENCIES</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero contact-hero">
+      <p class="eyebrow">Contact Us</p>
+      <h1>Request pricing, availability, or bulk supply support.</h1>
+      <p>Send your material list or project requirement and the M . J . AGENCIES team will help with product selection and supply coordination.</p>
+    </section>
+
+    <section class="contact-layout">
+      <div class="contact-panel">
+        <h2>Business Details</h2>
+        <dl class="details-list">
+          <div>
+            <dt>Business</dt>
+            <dd>M . J . AGENCIES</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Trichy, Tamil Nadu</dd>
+          </div>
+          <div>
+            <dt>Products</dt>
+            <dd>Cement, TMT steel, structural materials, waterproofing, finishers, hardware</dd>
+          </div>
+          <div>
+            <dt>Service</dt>
+            <dd>Retail and bulk construction material supply</dd>
+          </div>
+        </dl>
+        <div class="contact-actions">
+          <a class="button primary" href="#enquiry-form">Send Requirement</a>
+          <a class="button outline" href="https://maps.app.goo.gl/pWbDPnhHwCSKJej19?g_st=ac" target="_blank" rel="noreferrer">Open Shop Location</a>
+        </div>
+      </div>
+
+      <form id="enquiry-form" class="contact-form" action="#" method="post">
+        <div class="form-note">Submit your requirement and we will contact you after checking stock and pricing.</div>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" placeholder="Mobile number" required>
+        </label>
+        <label>
+          Product Name
+          <input type="text" name="product_name" placeholder="Example: Ramco Supergrade" required>
+        </label>
+        <label>
+          Required Quantity
+          <input type="text" name="required_quantity" placeholder="Example: 25 bags / 2 tons" required>
+        </label>
+        <label>
+          Category
+          <select name="category">
+            <option value="">Select a category</option>
+            <option>Cement</option>
+            <option>TMT Steel</option>
+            <option>Structural Materials</option>
+            <option>Waterproofing</option>
+            <option>Finishers</option>
+            <option>Hardware</option>
+            <option>Bulk project supply</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" placeholder="Share quantity, brand preference, delivery area, and timeline"></textarea>
+        </label>
+        <label class="hp-field" aria-hidden="true">
+          Leave this field empty
+          <input type="text" name="website" tabindex="-1" autocomplete="off">
+        </label>
+        <button class="button primary" type="submit">Send Enquiry</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>M . J . AGENCIES</strong>
+      <p>Premium construction materials supplier in Trichy.</p>
+    </div>
+    <a href="products.html">View Products</a>
+  </footer>
+
+</body>
+</html>

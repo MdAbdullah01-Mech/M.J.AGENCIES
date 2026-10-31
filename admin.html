@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin Enquiries | M . J . AGENCIES</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="supabase-client.js"></script>
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="brand" href="index.html" aria-label="M . J . AGENCIES home">
+      <img class="brand-logo" src="assets/mj-agency-logo.png" alt="M.J. Agency logo">
+      <span>M . J . AGENCIES</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a class="active" href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="page admin-page">
+    <section class="page-hero">
+      <p class="eyebrow">Private Admin</p>
+      <h1>Customer Enquiries</h1>
+      <p>Sign in with an authorized administrator account to view and update product enquiries.</p>
+    </section>
+
+    <section id="admin-login" class="admin-panel">
+      <form class="contact-form admin-login-form" action="#" method="post">
+        <div class="form-note">Only emails added to the Supabase admin_users table can read enquiries.</div>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" autocomplete="current-password" required>
+        </label>
+        <button class="button primary" type="submit">Sign In</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </section>
+
+    <section id="admin-dashboard" class="admin-panel" hidden>
+      <div class="admin-toolbar">
+        <label>
+          Search
+          <input id="admin-search" type="search" placeholder="Name, phone, product, message">
+        </label>
+        <label>
+          Status
+          <select id="admin-status-filter">
+            <option value="all">All</option>
+            <option>New</option>
+            <option>Contacted</option>
+            <option>Quoted</option>
+            <option>Completed</option>
+          </select>
+        </label>
+        <button id="admin-refresh" class="button outline" type="button">Refresh</button>
+        <button id="admin-signout" class="button outline" type="button">Sign Out</button>
+      </div>
+
+      <p id="admin-message" class="form-status" role="status"></p>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Submitted</th>
+              <th>Customer</th>
+              <th>Phone</th>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Message</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="enquiries-table"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

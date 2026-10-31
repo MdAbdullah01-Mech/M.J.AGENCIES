@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">TMT reinforcement rods</title>
+  <desc id="desc">A bundle of ribbed TMT steel reinforcement rods.</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b969d"/>
+      <stop offset="0.45" stop-color="#303a42"/>
+      <stop offset="1" stop-color="#151c22"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="12" flood-color="#101417" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="900" height="420" fill="none"/>
+  <g filter="url(#shadow)" transform="translate(48 56)">
+    <g stroke="url(#steel)" stroke-width="24" stroke-linecap="round">
+      <path d="M28 260C208 150 370 102 540 88c112-9 204 3 286 36"/>
+      <path d="M22 220C212 112 392 64 566 58c110-4 190 16 274 60"/>
+      <path d="M38 302c190-108 370-154 544-158 111-2 191 19 273 65"/>
+      <path d="M18 180C194 82 350 38 526 28c126-7 226 12 316 58"/>
+      <path d="M55 338c188-104 350-141 530-139 105 1 190 24 254 64"/>
+    </g>
+    <g stroke="#c0c8cc" stroke-width="3" opacity=".58">
+      <path d="M87 242l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26"/>
+      <path d="M94 202l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26"/>
+      <path d="M96 284l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26m28-48l28 26"/>
+    </g>
+  </g>
+</svg>
