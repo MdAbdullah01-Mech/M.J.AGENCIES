@@ -65,10 +65,18 @@
   }
 
   async function submitEnquiry(input) {
-    const client = await getClient();
     const enquiry = validateEnquiry(input);
-    const { error } = await client.from('enquiries').insert(enquiry);
-    if (error) throw new Error(error.message || 'Unable to submit enquiry.');
+    const response = await fetch('/.netlify/functions/submit-enquiry', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(enquiry),
+    });
+
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(result.message || 'Unable to submit enquiry. Please try again.');
+    }
+
     return { ok: true };
   }
 
